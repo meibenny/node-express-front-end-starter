@@ -1,0 +1,24 @@
+{
+  "name": "daedalus",
+  "version": "0.0.1",
+  "description": "Daedalus",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "build": "npm run build-ts && npm run copy-static-assets",
+    "build-ts": "tsc",
+    "copy-static-assets": "node copyStaticAssets.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benny Mei",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "@types/ejs": "^2.5.0",
+    "@types/express": "^4.11.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "shelljs": "^0.7.8"
+  }
+}
